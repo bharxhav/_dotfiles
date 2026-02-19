@@ -1,0 +1,22 @@
+# ── Aliases ───────────────────────────────────────────────────
+alias python=python3
+alias pip=pip3
+
+# ── Toolchains ───────────────────────────────────────────────
+. "$HOME/.cargo/env"
+
+# ── PATH ──────────────────────────────────────────────────────
+path=(
+  $HOME/.bun/bin
+  $HOME/.local/bin
+  $path
+)
+export PATH
+
+# ── Quick Rust helpers ────────────────────────────────────────
+rcc() { rustc "$1" -o "/tmp/${1:t:r}" && "/tmp/${1:t:r}" }
+rct() { rustc --test "$1" -o "/tmp/${1:t:r}_test" && "/tmp/${1:t:r}_test" }
+
+# ── Completions ───────────────────────────────────────────────
+# bun
+[ -s "$HOME/.bun/_bun" ] && source "$HOME/.bun/_bun"
