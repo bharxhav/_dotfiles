@@ -1,0 +1,25 @@
+// Zed keymap
+// https://zed.dev/docs/key-bindings
+// cmd-shift-p → "zed: open default keymap" to see all defaults
+[
+  {
+    "context": "Workspace",
+    "bindings": {
+      // ── Panels ────────────────────────────────────────────────
+      "cmd-e": "project_panel::ToggleFocus",
+      "cmd-g": "git_panel::ToggleFocus",
+      "cmd-;": "outline_panel::ToggleFocus",
+      "cmd-r": "agent::ToggleFocus",
+      // ── Terminal ──────────────────────────────────────────────
+      "cmd-shift-j": "workspace::NewTerminal",
+    },
+  },
+  {
+    "context": "Terminal",
+    "bindings": {
+      // ── Cycle terminals ───────────────────────────────────────
+      "cmd-]": "pane::ActivateNextItem",
+      "cmd-[": "pane::ActivatePreviousItem",
+    },
+  },
+]
