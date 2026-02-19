@@ -4,6 +4,7 @@
 {
   // ── Privacy ──────────────────────────────────────────────────
   // Disable all telemetry — no diagnostics or metrics sent to Zed
+  "helix_mode": true,
   "telemetry": {
     "diagnostics": false,
     "metrics": false,
@@ -65,6 +66,7 @@
   // ── Title Bar ──────────────────────────────────────────────
   // Show git branch icon in titlebar
   "title_bar": {
+    "show_sign_in": false,
     "show_branch_icon": true,
   },
 
@@ -117,7 +119,11 @@
 
   // ── Languages ──────────────────────────────────────────────
   "languages": {
+    "JSONC": {
+      "show_edit_predictions": false
+    },
     "Markdown": {
+      "show_edit_predictions": false,
       "format_on_save": "on",
     },
   },
