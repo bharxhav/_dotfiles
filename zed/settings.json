@@ -1,0 +1,130 @@
+// Zed settings
+// https://zed.dev/docs/configuring-zed
+// cmd-shift-p → "zed: open default settings" to see all defaults
+{
+  // ── Privacy ──────────────────────────────────────────────────
+  // Disable all telemetry — no diagnostics or metrics sent to Zed
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false,
+  },
+
+  // ── Trust ────────────────────────────────────────────────────
+  // Skip the "do you trust this folder?" prompt on every open
+  "session": {
+    "trust_all_worktrees": true,
+  },
+
+  // ── Editing Mode ─────────────────────────────────────────────
+  // VIM keybindings for modal editing
+  "vim_mode": true,
+
+  // ── Autocomplete / Predictions ───────────────────────────────
+  // Use GitHub Copilot for inline edit predictions
+  "edit_predictions": {
+    "provider": "copilot",
+  },
+
+  // ── AI Agent ─────────────────────────────────────────────────
+  // Agent panel settings — show token/turn stats in agent conversations
+  "agent": {
+    "dock": "left",
+    "favorite_models": [],
+    "model_parameters": [],
+    "show_turn_stats": true,
+  },
+
+  // ── Theme ────────────────────────────────────────────────────
+  // Force dark mode with Noctis Minimus (matches VSCode theme)
+  "theme": {
+    "mode": "dark",
+    "light": "One Light",
+    "dark": "Noctis Minimus",
+  },
+
+  // ── Icons ────────────────────────────────────────────────────
+  // Material icons for both light and dark modes
+  "icon_theme": {
+    "mode": "system",
+    "light": "Material Icon Theme",
+    "dark": "Material Icon Theme",
+  },
+
+  // ── Window Behavior ─────────────────────────────────────────
+  // Ask before quitting Zed
+  "confirm_quit": true,
+  // Auto-close tabs when the file is deleted from disk
+  "close_on_file_delete": true,
+
+  // ── Toolbar ────────────────────────────────────────────────
+  "toolbar": {
+    "quick_actions": false,
+    "agent_review": false,
+  },
+
+  // ── Title Bar ──────────────────────────────────────────────
+  // Show git branch icon in titlebar
+  "title_bar": {
+    "show_branch_icon": true,
+  },
+
+  // ── Outline Panel ───────────────────────────────────────────
+  // Outline panel on the left (default dock)
+  "outline_panel": {
+    "dock": "left",
+    "auto_reveal_entries": true,
+  },
+
+  // ── Project Panel ─────────────────────────────────────────
+  // File tree on the right, auto-open on launch
+  "project_panel": {
+    "dock": "right",
+    "starts_open": true,
+  },
+
+  // ── Tabs ──────────────────────────────────────────────────
+  "tab_bar": {
+    "show_nav_history_buttons": false,
+  },
+  "tabs": {
+    "git_status": true,
+    "file_icons": true,
+  },
+
+  // ── Scrolling & Line Numbers ────────────────────────────────
+  // Relative line numbers (current line shows absolute, rest show distance)
+  "relative_line_numbers": "enabled",
+  // Keep cursor centered — large margin pushes viewport to keep cursor mid-screen
+  "vertical_scroll_margin": 999,
+
+  // ── Editor Highlights ───────────────────────────────────────
+  // Rainbow brackets
+  "colorize_brackets": true,
+
+  // ── Git ─────────────────────────────────────────────────────
+  // Show commit summary in inline blame
+  "git": {
+    "inline_blame": {
+      "show_commit_summary": true,
+    },
+  },
+
+  // ── Terminal ───────────────────────────────────────────────
+  // Taller terminal (~65% of viewport)
+  "terminal": {
+    "default_height": 640,
+  },
+
+  // ── Languages ──────────────────────────────────────────────
+  "languages": {
+    "Markdown": {
+      "format_on_save": "on",
+    },
+  },
+
+  // ── Fonts ────────────────────────────────────────────────────
+  // UI chrome font size
+  "ui_font_size": 19,
+  // Editor buffer font size
+  "buffer_font_size": 18,
+}
