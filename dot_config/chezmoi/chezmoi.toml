@@ -1,0 +1,8 @@
+[git]
+    autoAdd = true
+    autoCommit = true
+    autoPush = true
+    commitMessageTemplate = "SYSCHORE SYNC"
+
+[edit]
+    command = "zed"
