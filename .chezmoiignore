@@ -2,3 +2,7 @@ IGNOREME/
 README.md
 dot_config/zed/README.md
 .config/zed/README.md
+
+{{ if ne .chezmoi.hostname "C2NVPK9LRL" }}
+.gitconfig-personal
+{{ end }}
