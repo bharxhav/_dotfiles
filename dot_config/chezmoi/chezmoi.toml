@@ -1,3 +1,8 @@
+[data]
+    email    = "k@bk.bio"
+    workmail = "Bhargav.Kantheti@cbre.com"
+    name     = "Bhargav Kantheti"
+
 [git]
     autoAdd = true
     autoCommit = true

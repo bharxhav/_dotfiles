@@ -1,0 +1,38 @@
+[user]
+	name = {{ .name }}
+{{- if eq .chezmoi.hostname "C2NVPK9LRL" }}
+	email = {{ .workmail }}
+{{- else }}
+	email = {{ .email }}
+{{- end }}
+
+[core]
+	editor = zed --wait
+	autocrlf = input
+
+[pull]
+	rebase = false
+
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+
+[credential]
+	credentialStore = keychain
+	helper = /usr/local/bin/git-credential-manager
+
+{{- if eq .chezmoi.hostname "C2NVPK9LRL" }}
+
+# ── Personal email override (work machine) ───────────────────
+[includeIf "gitdir:{{ .chezmoi.homeDir }}/bharxhav/"]
+	path = ~/.gitconfig-personal
+
+# ── Work credentials ─────────────────────────────────────────
+[credential "https://dev.azure.com"]
+	useHttpPath = true
+
+[credential "https://cbre.palantirfoundry.com"]
+	provider = generic
+{{- end }}
