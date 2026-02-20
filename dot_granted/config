@@ -1,0 +1,15 @@
+# Granted – AWS credential browser launcher
+# https://docs.commonfate.io/granted/
+
+DefaultBrowser = "FIREFOX"
+CustomBrowserPath = "/Applications/Zen.app/Contents/MacOS/zen"
+CustomSSOBrowserPath = ""
+Ordering = ""
+ExportCredentialSuffix = ""
+
+[AWSConsoleBrowserLaunchTemplate]
+  Command = ""
+
+# Use macOS Keychain for secure credential storage
+[Keyring]
+  Backend = "keychain"

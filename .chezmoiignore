@@ -5,4 +5,6 @@ dot_config/zed/README.md
 
 {{ if ne .chezmoi.hostname "C2NVPK9LRL" }}
 .gitconfig-personal
+.granted/
+.aws/
 {{ end }}

@@ -1,0 +1,74 @@
+# AWS CLI profiles – all using Granted SSO via CBRE Cloud
+# `assume <profile>` to switch, `granted credentials` to check
+
+# ── Default (tops2 nonprod) ──────────────────────────────────────
+[default]
+credential_process = granted credential-process --profile tops2-nonprod --auto-login
+granted_sso_start_url = https://cbrecloud.awsapps.com/start
+granted_sso_region = us-east-1
+granted_sso_account_id = 238948498230
+granted_sso_role_name = Developer
+region = us-east-1
+
+# ── TOPS2 ────────────────────────────────────────────────────────
+[profile tops2-nonprod]
+credential_process = granted credential-process --profile tops2-nonprod --auto-login
+granted_sso_start_url = https://cbrecloud.awsapps.com/start
+granted_sso_region = us-east-1
+granted_sso_account_id = 238948498230
+granted_sso_role_name = Developer
+region = us-east-1
+granted_color = green
+granted_icon = tree
+
+[profile tops2-prod]
+credential_process = granted credential-process --profile tops2-prod --auto-login
+granted_sso_start_url = https://cbrecloud.awsapps.com/start
+granted_sso_region = us-east-1
+granted_sso_account_id = 692070625786
+granted_sso_role_name = ReadOnly-Prod
+region = us-east-1
+granted_color = red
+granted_icon = briefcase
+
+# ── Tour ─────────────────────────────────────────────────────────
+[profile tour-nonprod]
+credential_process = granted credential-process --profile tour-nonprod --auto-login
+granted_sso_start_url = https://cbrecloud.awsapps.com/start
+granted_sso_region = us-east-1
+granted_sso_account_id = 888517813471
+granted_sso_role_name = Developer
+region = us-east-1
+granted_color = blue
+granted_icon = vacation
+
+[profile tour-prod]
+credential_process = granted credential-process --profile tour-prod --auto-login
+granted_sso_start_url = https://cbrecloud.awsapps.com/start
+granted_sso_region = us-east-1
+granted_sso_account_id = 809569134753
+granted_sso_role_name = ReadOnly-Prod
+region = us-east-1
+granted_color = orange
+granted_icon = vacation
+
+# ── Analytics ────────────────────────────────────────────────────
+[profile analytics-nonprod]
+credential_process = granted credential-process --profile analytics-nonprod --auto-login
+granted_sso_start_url = https://cbrecloud.awsapps.com/start
+granted_sso_region = us-east-1
+granted_sso_account_id = 053967679294
+granted_sso_role_name = Developer
+region = us-east-1
+granted_color = turquoise
+granted_icon = dollar
+
+[profile analytics-prod]
+credential_process = granted credential-process --profile analytics-prod --auto-login
+granted_sso_start_url = https://cbrecloud.awsapps.com/start
+granted_sso_region = us-east-1
+granted_sso_account_id = 691755339234
+granted_sso_role_name = ReadOnly-Prod
+region = us-east-1
+granted_color = purple
+granted_icon = dollar
