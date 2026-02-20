@@ -147,6 +147,13 @@
     "xml": true,
   },
 
+  // ── Jupyter ──────────────────────────────────────────────────
+  // Enable Jupyter notebook viewing/editing in Zed
+  "jupyter": {
+    "enabled": true,
+    "kernel_selections": {},
+  },
+
   // ── Fonts ────────────────────────────────────────────────────
   // UI chrome font size
   "ui_font_size": 19,
