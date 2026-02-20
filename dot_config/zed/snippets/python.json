@@ -1,0 +1,20 @@
+{
+  "Data science imports and plotting config": {
+    "prefix": "pydsimp",
+    "body": [
+      "import numpy as np",
+      "import pandas as pd",
+      "import matplotlib.pyplot as plt",
+      "import seaborn as sns",
+      "import missingno as msno",
+      "",
+      "plt.rcParams['figure.dpi'] = 600",
+      "plt.rcParams['savefig.dpi'] = 600",
+      "",
+      "sns.set_theme(style='darkgrid', palette='viridis', rc={",
+      "              \"figure.dpi\": 600, 'savefig.dpi': 600, 'figure.figsize': (11.7, 8.27)})",
+      "$0"
+    ],
+    "description": "Import data science modules and set plotting parameters"
+  }
+}
